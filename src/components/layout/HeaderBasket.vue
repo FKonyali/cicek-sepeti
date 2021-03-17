@@ -121,7 +121,7 @@
 
             &--top
                 text-align: left
-                font: 600 15px/11px var(--mainf)
+                font: 600 15px var(--mainf)
 
             &--bar
                 width: calc(100% - 30px)
@@ -136,5 +136,10 @@
                     height: 5px
                     width: 0px
                     transition: width 300ms
+
+    @media (max-width: 631px)
+        .header
+            &__progress
+                width: 200px
 
 </style>
