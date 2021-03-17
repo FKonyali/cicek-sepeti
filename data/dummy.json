@@ -1,0 +1,249 @@
+{
+    "products": [
+        {
+            "id": 0,
+            "image": "product-1.png",
+            "title": "Z6 Akıllı Saat Kameralı Konuşma Garantili Sim Kartlı Bluetooth",
+            "badge": "Ücretsiz Teslimat",
+            "price": 399.90,
+            "cat_id": 0
+        },
+        {
+            "id": 1,
+            "image": "product-2.png",
+            "title": "Calvin Klein Euphoria EDP 100 ml Kadın Parfüm",
+            "price": 145.61,
+            "cat_id": 1
+        },
+        {
+            "id": 2,
+            "image": "product-3.png",
+            "title": "Gold Çizgili Vazoda 2 Dal Orkide Çiçeği",
+            "badge": "Ücretsiz Teslimat",
+            "price": 249.90,
+            "cat_id": 2
+        },
+        {
+            "id": 3,
+            "image": "product-4.png",
+            "title": "925 Ayar Gümüş Çeyreklik Bileklik (Y)",
+            "price": 329.90,
+            "cat_id": 3
+        },
+        {
+            "id": 4,
+            "image": "product-5.png",
+            "title": "Sailor SD-3160 Siyah Dağcı Seyahat Sırt Çantası 55 LT Outdoor-Trekking",
+            "badge": "Ücretsiz Teslimat",
+            "price": 499.90,
+            "cat_id": 4
+        },
+        {
+            "id": 5,
+            "image": "product-6.png",
+            "title": "Büyük Boy Metal Osmanlı Bizans Satranç Takımı Parlak Ve Ceviz Tahtası",
+            "badge": "Ücretsiz Teslimat",
+            "price": 19.90,
+            "cat_id": 5
+        },
+        {
+            "id": 6,
+            "image": "product-7.png",
+            "title": "130 Cm Papyonlu Büyük Ayıcı (%100 Yerli)",
+            "badge": "Ücretsiz Teslimat",
+            "price": 89.90,
+            "cat_id": 5
+        },
+        {
+            "id": 7,
+            "image": "product-8.png",
+            "title": "925 Ayar Gümüş Dualı İsimli Nazar İgnesi",
+            "badge": "Ücretsiz Teslimat",
+            "price": 29.90,
+            "cat_id": 3
+        },
+        {
+            "id": 8,
+            "image": "product-9.png",
+            "title": "Özel Tatlar Çikolata Kutusu 300 gr",
+            "badge": "Ücretsiz Teslimat",
+            "price": 59.90,
+            "cat_id": 6
+        },
+        {
+            "id": 9,
+            "image": "product-10.png",
+            "title": "Kucak Dolusu Aşk 25 Kırmızı Gül Buketi",
+            "price": 199.90,
+            "cat_id": 2
+        },
+        {
+            "id": 10,
+            "image": "product-1.png",
+            "title": "Z6 Akıllı Saat Kameralı Konuşma Garantili Sim Kartlı Bluetooth",
+            "badge": "Ücretsiz Teslimat",
+            "price": 399.90,
+            "cat_id": 0
+        },
+        {
+            "id": 11,
+            "image": "product-2.png",
+            "title": "Calvin Klein Euphoria EDP 100 ml Kadın Parfüm",
+            "price": 145.61,
+            "cat_id": 1
+        },
+        {
+            "id": 12,
+            "image": "product-3.png",
+            "title": "Gold Çizgili Vazoda 2 Dal Orkide Çiçeği",
+            "badge": "Ücretsiz Teslimat",
+            "price": 249.90,
+            "cat_id": 2
+        },
+        {
+            "id": 13,
+            "image": "product-4.png",
+            "title": "925 Ayar Gümüş Çeyreklik Bileklik (Y)",
+            "price": 329.90,
+            "cat_id": 3
+        },
+        {
+            "id": 14,
+            "image": "product-5.png",
+            "title": "Sailor SD-3160 Siyah Dağcı Seyahat Sırt Çantası 55 LT Outdoor-Trekking",
+            "badge": "Ücretsiz Teslimat",
+            "price": 499.90,
+            "cat_id": 4
+        },
+        {
+            "id": 15,
+            "image": "product-6.png",
+            "title": "Büyük Boy Metal Osmanlı Bizans Satranç Takımı Parlak Ve Ceviz Tahtası",
+            "badge": "Ücretsiz Teslimat",
+            "price": 19.90,
+            "cat_id": 5
+        },
+        {
+            "id": 16,
+            "image": "product-7.png",
+            "title": "130 Cm Papyonlu Büyük Ayıcı (%100 Yerli)",
+            "badge": "Ücretsiz Teslimat",
+            "price": 89.90,
+            "cat_id": 5
+        },
+        {
+            "id": 17,
+            "image": "product-8.png",
+            "title": "925 Ayar Gümüş Dualı İsimli Nazar İgnesi",
+            "badge": "Ücretsiz Teslimat",
+            "price": 29.90,
+            "cat_id": 3
+        },
+        {
+            "id": 18,
+            "image": "product-9.png",
+            "title": "Özel Tatlar Çikolata Kutusu 300 gr",
+            "badge": "Ücretsiz Teslimat",
+            "price": 59.90,
+            "cat_id": 6
+        },
+        {
+            "id": 19,
+            "image": "product-10.png",
+            "title": "Kucak Dolusu Aşk 25 Kırmızı Gül Buketi",
+            "price": 199.90,
+            "cat_id": 2
+        }
+    ],
+    "categories": [
+        {
+            "id": 0,
+            "title": "Elektronik",
+            "slug": "/elektronik"
+        },
+        {
+            "id": 1,
+            "title": "Ev ve Yaşam",
+            "slug": "/ev-ve-yasam"
+        },
+        {
+            "id": 2,
+            "title": "Evcil Hayvan",
+            "slug": "/evcil-hayvan"
+        },
+        {
+            "id": 3,
+            "title": "Kitap",
+            "slug": "/kitap"
+        },
+        {
+            "id": 4,
+            "title": "Oyuncak",
+            "slug": "/oyuncak"
+        },
+        {
+            "id": 5,
+            "title": "Spor",
+            "slug": "/spor"
+        },
+        {
+            "id": 6,
+            "title": "Çiçek",
+            "count": 4,
+            "slug": "/cicek"
+        },
+        {
+            "id": 7,
+            "title": "Hediye",
+            "slug": "/hediye"
+        },
+        {
+            "id": 8,
+            "title": "Moda, Aksesuar",
+            "slug": "/moda-aksesuar"
+        },
+        {
+            "id": 9,
+            "title": "Ofis, Kırtasiye",
+            "slug": "/ofis-kirtasiye"
+        },
+        {
+            "id": 10,
+            "title": "Parfüm",
+            "slug": "/parfum"
+        },
+        {
+            "id": 11,
+            "title": "Kişisel Bakım",
+            "slug": "/kisisel-bakim"
+        },
+        {
+            "id": 12,
+            "title": "Petshop",
+            "slug": "/petshop"
+        }
+    ],
+    "opportunity": [
+        {
+            "id": 1,
+            "image": "opportunity-1.png",
+            "title": "75 TL Üzerine Teslimat Ücreti Bizden",
+            "btn_name": "Detaylı Bilgi",
+            "bg_color": "#FFEAE8"
+        },
+        {
+            "id": 2,
+            "image": "opportunity-2.png",
+            "title": "Hediye Kategorisi için Sepette %15 İndirim",
+            "btn_name": "Hediye Ürünleri",
+            "bg_color": "#E8F1FF"
+        },
+        {
+            "id": 3,
+            "image": "opportunity-3.png",
+            "title": "Kırtasiye Kategorisi için Sepette %15 İndirim",
+            "btn_name": "Detaylı Bilgi",
+            "bg_color": "#E2F7E1"
+        }
+    ]
+}
