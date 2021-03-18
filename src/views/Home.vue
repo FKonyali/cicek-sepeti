@@ -49,12 +49,13 @@
             OpportunityBox
         },
         created() {
-            if(this.getProducts.products.length === 0) {
+            if(this.getProducts.previous.length === 0) {
                 this.$store.dispatch('products');
             }
 
             this.$store.commit('updateProducts', {
                 ...this.$store.getters.getProducts,
+                oldFilter: this.getProducts.previous,
                 products: this.getProducts.previous
             })
             

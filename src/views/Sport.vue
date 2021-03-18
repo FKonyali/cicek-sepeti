@@ -32,14 +32,15 @@
         },
         created() {
             //cat_id => 10
-            if(this.getProducts.products.length === 0) {
+            if(this.getProducts.previous.length === 0) {
                 this.$store.dispatch('products').then(() => {
                     let filter = this.getProducts.previous.filter((item) => {
                         return item.cat_id === 10
                     });
 
                     this.$store.commit('updateProducts', {
-                        ...this.$store.getters.getProducts,
+                        ...this.getProducts,
+                        oldFilter:filter, 
                         products: filter
                     })
                 });
@@ -49,7 +50,8 @@
                 });
 
                 this.$store.commit('updateProducts', {
-                    ...this.$store.getters.getProducts,
+                    ...this.getProducts,
+                    oldFilter:filter, 
                     products: filter
                 })
             }

@@ -13,7 +13,9 @@
         name: "HeaderSearch",
         data() {
             return {
-                searchFilterInput: ''
+                searchFilterInput: '',
+                oneRun: true,
+                oldFilter: []
             }
         },
         methods: {
@@ -30,11 +32,11 @@
             productFilterList() {
                 let filter = [];
                 if(this.searchFilterInput.length > 2) {
-                    filter = this.getProducts.products.filter((item) => {
+                    filter = this.getProducts.oldFilter.filter((item) => {
                         return this.toLowerCase(item.title).includes(this.toLowerCase(this.searchFilterInput))
                     });
                 } else {
-                    filter = this.getProducts.previous
+                    filter = this.getProducts.oldFilter
                 }
 
                 this.$store.commit('updateProducts', {
