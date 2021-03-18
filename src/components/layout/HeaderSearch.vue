@@ -1,7 +1,7 @@
 <template>
     <div class="header__search">
         <i class="icon-search header__icon"></i>
-        <input type="text" class="header__input" placeholder="Ürün Ara" v-model="searchFilterInput">
+        <input type="text" class="header__input" placeholder="Ürün Ara" v-model="searchFilterInput" ref="input">
         <button title="Ara" class="header__button">
             Ara
         </button>
@@ -16,6 +16,13 @@
                 searchFilterInput: ''
             }
         },
+        methods: {
+            toLowerCase(string) {
+                var letters = { "İ": "i", "I": "ı", "Ş": "ş", "Ğ": "ğ", "Ü": "ü", "Ö": "ö", "Ç": "ç" };
+                string = string.replace(/(([İIŞĞÜÇÖ]))+/g, function(letter){ return letters[letter]; })
+                return string.toLowerCase();
+            }
+        },
         computed: {
             getProducts() {
                 return this.$store.getters.getProducts
@@ -24,7 +31,7 @@
                 let filter = [];
                 if(this.searchFilterInput.length > 2) {
                     filter = this.getProducts.products.filter((item) => {
-                        return item.title.toLowerCase().includes(this.searchFilterInput.toLowerCase())
+                        return this.toLowerCase(item.title).includes(this.toLowerCase(this.searchFilterInput))
                     });
                 } else {
                     filter = this.getProducts.previous
@@ -41,6 +48,11 @@
         watch: {
             'searchFilterInput': function() {
                 this.$emit('allProducts', this.productFilterList);
+            },
+            $route(to) {
+                if(to) {
+                    this.$refs.input.value = ''
+                }
             }
         }
     }

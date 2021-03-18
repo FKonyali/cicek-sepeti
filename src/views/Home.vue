@@ -52,6 +52,11 @@
             if(this.getProducts.products.length === 0) {
                 this.$store.dispatch('products');
             }
+
+            this.$store.commit('updateProducts', {
+                ...this.$store.getters.getProducts,
+                products: this.getProducts.previous
+            })
             
             if(this.getProducts.products.length === 0) {
                 this.$store.dispatch('opportunity');

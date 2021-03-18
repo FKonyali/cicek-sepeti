@@ -3,8 +3,8 @@
         <SmallHeadline 
             Title="Kitap" 
         />
-        <div class="products row" v-if="getProducts.status === 'OK' && newData.products.length > 0">
-            <div class="col-20" v-for="(product) in newData.products" :key="product.id">
+        <div class="products row" v-if="getProducts.status === 'OK' && getProducts.products.length > 0">
+            <div class="col-20" v-for="(product) in getProducts.products" :key="product.id">
                 <ProductBox 
                     :Image="product.image"
                     :Title="product.title"
@@ -14,7 +14,7 @@
                 />
             </div>
         </div>
-        <div class="alert" v-else-if="getProducts.status == 'OK' && newData.products.length == 0">
+        <div class="alert" v-else-if="getProducts.status == 'OK' && getProducts.products.length == 0">
             Bu kategoriye ait ürün bulunamadı :(
         </div>
     </div>
@@ -30,11 +30,6 @@
             SmallHeadline,
             ProductBox
         },
-        data() {
-            return {
-                newData: []
-            }
-        },
         created() {
             //cat_id => 8
             if(this.getProducts.products.length === 0) {
@@ -43,20 +38,20 @@
                         return item.cat_id === 9
                     });
 
-                    this.newData = {
-                        ...this.getProducts,
+                    this.$store.commit('updateProducts', {
+                        ...this.$store.getters.getProducts,
                         products: filter
-                    };
+                    })
                 });
             } else {
                 let filter = this.getProducts.products.filter((item) => {
                     return item.cat_id === 9
                 });
 
-                this.newData = {
-                    ...this.getProducts,
+                this.$store.commit('updateProducts', {
+                    ...this.$store.getters.getProducts,
                     products: filter
-                };
+                })
             }
         },
         computed: {
